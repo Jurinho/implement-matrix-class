@@ -39,7 +39,7 @@ class Matrix(object):
         if self.h > 2:
             raise(NotImplementedError, "Calculating determinant not implemented for matrices largerer than 2x2.")
         
-        # TODO - your code here
+      
         if self.h == 1:
             return self.g[0]
         if self.h == 2:
@@ -79,7 +79,7 @@ class Matrix(object):
         if self.h > 2:
             raise(NotImplementedError, "inversion not implemented for matrices larger than 2x2.")
 
-        # TODO - your code here
+       
         determinant = self.determinant()
         inv = []
         if self.w == self.h == 1:
@@ -172,7 +172,7 @@ class Matrix(object):
           -3.0  -4.0
         """
         #   
-        # TODO - your code here
+       
         #
         n = zeroes(self.h, self.w)
         for i in range(self.h):
@@ -186,7 +186,7 @@ class Matrix(object):
         Defines the behavior of - operator (as subtraction)
         """
         #   
-        # TODO - your code here
+       
         #
         
         sub  = zeroes(self.h, self.w)
@@ -200,7 +200,7 @@ class Matrix(object):
         Defines the behavior of * operator (matrix multiplication)
         """
         #   
-        # TODO - your code here
+       
         #
         multi = zeroes(self.h, other.w)
         for i in range(multi.h):
